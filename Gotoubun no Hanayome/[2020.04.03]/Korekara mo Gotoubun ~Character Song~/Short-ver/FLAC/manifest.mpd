@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Generated with https://github.com/shaka-project/shaka-packager version v3.4.2-c819dea-release-->
+<MPD xmlns="urn:mpeg:dash:schema:mpd:2011" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:mpeg:dash:schema:mpd:2011 DASH-MPD.xsd" xmlns:cenc="urn:mpeg:cenc:2013" profiles="urn:mpeg:dash:profile:isoff-live:2011" minBufferTime="PT2S" type="static" mediaPresentationDuration="PT131.592545S">
+  <Period id="0">
+    <AdaptationSet id="0" contentType="audio" segmentAlignment="true">
+      <ContentProtection value="cenc" schemeIdUri="urn:mpeg:dash:mp4protection:2011" cenc:default_KID="628180c6-5965-3963-af83-5097c145b424"/>
+      <ContentProtection schemeIdUri="urn:uuid:1077efec-c0b2-4d02-ace3-3c1e52e2fb4b">
+        <cenc:pssh>AAAANHBzc2gBAAAAEHfv7MCyTQKs4zweUuL7SwAAAAFigYDGWWU5Y6+DUJfBRbQkAAAAAA==</cenc:pssh>
+      </ContentProtection>
+      <Representation id="0" bandwidth="1111489" codecs="flac" mimeType="audio/mp4" audioSamplingRate="44100">
+        <AudioChannelConfiguration schemeIdUri="urn:mpeg:dash:23003:3:audio_channel_configuration:2011" value="2"/>
+        <SegmentTemplate timescale="44100" initialization="init.mp4" media="ppn_$Number$.m4s" startNumber="1">
+          <SegmentTimeline>
+            <S t="0" d="266240" r="1"/>
+            <S t="532480" d="262144"/>
+            <S t="794624" d="266240"/>
+            <S t="1060864" d="262144"/>
+            <S t="1323008" d="266240" r="1"/>
+            <S t="1855488" d="262144"/>
+            <S t="2117632" d="266240"/>
+            <S t="2383872" d="262144"/>
+            <S t="2646016" d="266240" r="1"/>
+            <S t="3178496" d="262144"/>
+            <S t="3440640" d="266240"/>
+            <S t="3706880" d="262144"/>
+            <S t="3969024" d="266240" r="1"/>
+            <S t="4501504" d="262144"/>
+            <S t="4763648" d="266240"/>
+            <S t="5029888" d="262144"/>
+            <S t="5292032" d="266240"/>
+            <S t="5558272" d="244959"/>
+          </SegmentTimeline>
+        </SegmentTemplate>
+      </Representation>
+    </AdaptationSet>
+  </Period>
+</MPD>
